@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "version": "1.0.1",
+  "scripts": {
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "miniprogram-api-typings": "^2.6.5-2",
+    "tslint": "^5.18.0",
+    "tslint-config-alloy": "^0.2.1",
+    "tslint-eslint-rules": "^5.4.0"
+  }
+}

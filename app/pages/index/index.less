@@ -1,0 +1,39 @@
+@import (reference) "../../styles/global";
+@import (css) "../../styles/iconfont.wxss";
+
+.container {
+	.container;
+	display: flex;
+	flex-flow: row wrap;
+
+	.item {
+		width: calc((100% / 3) - unit(2, rpx));
+		height: unit(248, rpx);
+		background: #fff;
+		border: unit(1, rpx) solid #eee;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		transition: all .2s;
+
+		.icon {
+			font-size: unit(60, rpx);
+			color: @icon-color;
+		}
+
+		.name {
+			font-size: unit(24, rpx);
+			padding-top: unit(10, rpx);
+		}
+
+		&.active {
+			background: @active-bg-color;
+
+			.icon,
+			.name {
+				color: @active-font-color;
+			}
+		}
+	}
+}

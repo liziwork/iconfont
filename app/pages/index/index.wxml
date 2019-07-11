@@ -1,0 +1,10 @@
+<view class="container">
+    <view wx:for="{{ iconList }}"
+          wx:key="item"
+          data-index="{{ index }}"
+          class="item {{ index === iconIndex ? 'active' : '' }}"
+          bind:tap="click">
+        <view class="icon icon{{ item.font_class }}"></view>
+        <view class="name">{{ item.name }}</view>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+@import "../../styles/iconfont.wxss";
+.container {
+  width: 100%;
+  background: #fbfbfb;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .item {
+  width: calc((100% / 3) - 2rpx);
+  height: 248rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.container .item .icon {
+  font-size: 60rpx;
+  color: #333;
+}
+.container .item .name {
+  font-size: 24rpx;
+  padding-top: 10rpx;
+}
+.container .item.active {
+  background: #fc0d1b;
+}
+.container .item.active .icon,
+.container .item.active .name {
+  color: #fff;
+}
